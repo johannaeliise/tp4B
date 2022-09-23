@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Verdana';
+  background-color: #6D5D46;
+  padding: 0;
+  margin: 0;
+}
+
+#titleBanner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url (Photo by <a href="https://unsplash.com/@vicaleksa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victoria Alexandrova</a> on <a href="https://unsplash.com/s/photos/tiramisu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  );
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 70%);
+}
+
+#titleBanner h1 {
+  font-family: 'Verdana';
+  color: white;
+  font-size: 60px;
+  padding: 0;
+  margin: 0 0 2vw 2vw;
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+#recipeColumns {
+  padding: 4vh;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6vh;
+  background-color: #6D5D46;
+}
+
+#recipeColumns div#ingredients {
+  flex-basis: 40%;
+}
+
+#recipeColumns div#equipment {
+  flex-basis: 40%;
+}
+
+#recipeColumns div#directions {
+  flex-basis: 40%;
+}
+
+#recipeColumns ul,
+ol {
+  padding-left: 1.1em;
+}
+
+ul,
+ol {
+  display: block;
+}
+
+#recipeColumns h4 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 3;
+  font-family: 'Roboto', ;
+}
+
+.tiramisu.jpg {
+  width: 60vh;
+  height: 50vh;
+  align: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#footer,
+#footer a {
+  text-align: right;
+  font-size: 10px;
+}
+
+@media screen and (orientation: portrait) {
+  #recipeColumns {
+    padding: 1vh 2vh 2vh 2vh;
+    display: block;
+  }
+  #recipeColumns div {
+    position: relative;
+    margin: 2.5vh 0 5vh 0;
+    fontsize: 50%;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 575px) {
+  #titleBanner {
+    height: 98vh;
+  }
+  #titleBanner h1 {
+    font-size: 700%;
+    margin: 0 0 3vh 3vh;
+  }
+}
